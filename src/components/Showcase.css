@@ -1,0 +1,149 @@
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    justify-content: center;
+    background-color: rgb(99,102,241);
+    background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%)
+}
+
+.showcase-text-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.showcase-text-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.showcase-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.showcase-text-header::after {
+    content: 'Your';
+    display: none;
+}
+
+.showcase-text-info {
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+
+.showcase-app-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.showcase-app-buttons img {
+    width: 100%;               
+    cursor: pointer;       
+}
+
+.discover-more-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.discover-more-button {
+    background-color: #FFF;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+}
+
+.discover-more-button:hover {
+    background-color: #e5e7eb;
+}
+
+.discover-more-container p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.showcase-image-container {
+    display: none;
+}
+
+.showcase-header {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .showcase-content-container {
+        width: 100%;
+        margin: auto;
+        max-width: 1320px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .showcase-image-container {
+        display: block;
+    }
+
+    .showcase-image-container img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .showcase-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .showcase-text-info {
+        font-size: 1.3rem;
+    }
+
+    .showcase-app-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .showcase-text-header {
+        display: none;
+    }
+
+    .showcase-header {
+        display: flex;
+    } 
+}
+
+@media (min-width: 1400px) {
+    .showcase-header {
+        display: none;
+    }
+
+    .showcase-text-header {
+        display: flex;
+        font-size: 4rem;
+    }
+
+    .discover-more-container {
+        margin-top: 5rem;
+    }
+} 
