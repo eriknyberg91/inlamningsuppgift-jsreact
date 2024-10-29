@@ -9,6 +9,7 @@ import IconSupport from './img/iconsupport.svg'
 import IconCashback from './img/iconcashback.svg'
 import IconSmile from './img/iconsmile.svg'
 import Branding from './components/Branding'
+import HowDoesItWork from './components/HowDoesItWork'
 
 const App = () => {
 
@@ -51,6 +52,7 @@ const App = () => {
       <Showcase />
       <Branding />
       <Features featuresList={features} />
+      <HowDoesItWork />
     </div>
   )
 }
