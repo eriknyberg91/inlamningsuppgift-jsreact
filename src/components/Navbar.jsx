@@ -3,7 +3,7 @@ import './navbar.css'
 
 const Navbar = () => {
   return (
-    <div className="container">
+    <div className="navbar-container">
 
             <a id="logo" href="index.html"><img src='\src\img\logo.svg' alt="Silicon logo" /></a>
 
