@@ -11,6 +11,7 @@ import IconSmile from './img/iconsmile.svg'
 import Branding from './components/Branding'
 import HowDoesItWork from './components/HowDoesItWork'
 import ProductInfo from './components/ProductInfo'
+import Clients from './components/Clients'
 
 const App = () => {
 
@@ -55,6 +56,7 @@ const App = () => {
       <Features featuresList={features} />
       <HowDoesItWork />
       <ProductInfo />
+      <Clients />
     </div>
   )
 }
