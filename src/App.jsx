@@ -13,6 +13,7 @@ import HowDoesItWork from './components/HowDoesItWork'
 import ProductInfo from './components/ProductInfo'
 import Clients from './components/Clients'
 import FAQ from './components/FAQ'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -59,6 +60,7 @@ const App = () => {
       <ProductInfo />
       <Clients />
       <FAQ />
+      <Footer />
     </div>
   )
 }
