@@ -12,6 +12,7 @@ import Branding from './components/Branding'
 import HowDoesItWork from './components/HowDoesItWork'
 import ProductInfo from './components/ProductInfo'
 import Clients from './components/Clients'
+import FAQ from './components/FAQ'
 
 const App = () => {
 
@@ -57,6 +58,7 @@ const App = () => {
       <HowDoesItWork />
       <ProductInfo />
       <Clients />
+      <FAQ />
     </div>
   )
 }

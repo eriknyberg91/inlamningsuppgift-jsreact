@@ -10,12 +10,12 @@ import brandlogo6 from '../img/brandlogo6.svg'
 const Branding = () => {
   return (
     <div className="branding-container">
-            <img class="tablet-branding" src={brandlogo1} alt="Logo of corporation using the app"/>
-            <img class="tablet-branding" src={brandlogo2} alt="Logo of corporation using the app"/>
-            <img class="tablet-branding" src={brandlogo3} alt="Logo of corporation using the app"/>
-            <img class="tablet-branding" src={brandlogo4} alt="Logo of corporation using the app"/>
-            <img class="desktop-branding" src={brandlogo5} alt="Logo of corporation using the app"/>
-            <img class="desktop-branding" src={brandlogo6} alt="Logo of corporation using the app"/>
+            <img className="tablet-branding" src={brandlogo1} alt="Logo of corporation using the app"/>
+            <img className="tablet-branding" src={brandlogo2} alt="Logo of corporation using the app"/>
+            <img className="tablet-branding" src={brandlogo3} alt="Logo of corporation using the app"/>
+            <img className="tablet-branding" src={brandlogo4} alt="Logo of corporation using the app"/>
+            <img className="desktop-branding" src={brandlogo5} alt="Logo of corporation using the app"/>
+            <img className="desktop-branding" src={brandlogo6} alt="Logo of corporation using the app"/>
         </div>
   )
 }

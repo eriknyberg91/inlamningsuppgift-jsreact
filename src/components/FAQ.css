@@ -1,0 +1,119 @@
+.faq-container {
+    margin-top: 2rem;
+}
+
+.faq-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    
+}
+
+.faq-info h1 {
+    font-weight: 900;
+}
+
+.faq-info p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.faq-get-in-touch-container {
+    display: none;
+}
+
+.contact-us-button-container {
+    display: none;
+}
+
+.contact-us-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.contact-us-button-container button {
+    background-color: var(--color-primary);
+    color: #FFF;
+    padding: .8rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .contact-us-button-container {
+        display: none;
+    }
+
+    .faq-get-in-touch-container {
+            display: flex;
+            gap: 1rem;
+            margin: 3rem 0;
+            padding: 0 2rem;
+    }
+    
+    .faq-contact-card {
+            width: 50%;
+            padding: 1rem;
+            border: 1px solid rgb(219, 206, 206);
+            border-radius: 15px;
+            display: grid;
+            gap: 10px;
+    }
+    
+    .faq-contact-card a {
+            text-decoration: none;
+    }
+
+    .faq-contact-message {
+        display: block;
+    }
+    
+    #phone-contact {
+            color: var(--color-primary);
+    }
+    
+    #message-contact {
+            color: rgb(6, 196, 6);
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+    .faq-container {
+        max-width: 1320px;
+        display: grid;
+        grid-template-areas: 
+            "info questions"
+            "contact questions";
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+        place-self: center;
+        margin-bottom: 2rem;
+    }
+
+    .faq-info {
+        grid-area: info;
+        width: 100%;
+    }
+
+    .faq-get-in-touch-container {
+        grid-area: contact;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .faq-questions {
+        grid-area: questions;
+    }
+}
