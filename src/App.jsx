@@ -11,7 +11,7 @@ import IconSmile from './img/iconsmile.svg'
 import Branding from './components/Branding'
 import HowDoesItWork from './components/HowDoesItWork'
 import ProductInfo from './components/ProductInfo'
-import Clients from './components/Clients'
+import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 
@@ -58,7 +58,7 @@ const App = () => {
       <Features featuresList={features} />
       <HowDoesItWork />
       <ProductInfo />
-      <Clients />
+      <Testimonials />
       <FAQ />
       <Footer />
     </div>
