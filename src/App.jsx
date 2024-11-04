@@ -14,6 +14,7 @@ import ProductInfo from './components/ProductInfo'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
+import ThemeProvider from './contexts/ThemeContext'
 
 const App = () => {
 
@@ -52,15 +53,17 @@ const App = () => {
   ]
   return (
     <div>
-      <Navbar />
-      <Showcase />
-      <Branding />
-      <Features featuresList={features} />
-      <HowDoesItWork />
-      <ProductInfo />
-      <Testimonials />
-      <FAQ />
-      <Footer />
+      <ThemeProvider>
+            <Navbar />
+            <Showcase />
+            <Branding />
+            <Features featuresList={features} />
+            <HowDoesItWork />
+            <ProductInfo />
+            <Testimonials />
+            <FAQ />
+            <Footer />
+      </ThemeProvider>
     </div>
   )
 }
