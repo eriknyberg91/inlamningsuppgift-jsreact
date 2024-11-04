@@ -76,6 +76,20 @@
   .btn-toggle-switch .label {
     display: none;
   }
+
+  .dark {
+    background-color: black;
+    color: #fff
+  }
+
+  .dark h1 {
+    color: #FFF
+  }
+
+  .dark .btn-mobile i {
+    color: #FFF
+  }
+
   
   /* START - Använde ChatGPT för att skapa en switch och anpassade sedan utseendet efter Figma-fil */
   .switch {
