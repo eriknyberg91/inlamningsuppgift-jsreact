@@ -1,14 +1,19 @@
 import React from 'react';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../contexts/ThemeContext';  // Make sure this path is correct!
+import './Navbar.css'
+import SiliconIcon from '../img/silicon-icon.svg'
 
 const Navbar = () => {
   const { darkMode, toggleTheme } = useTheme();
 
   return (
     <div className={`navbar-container ${darkMode ? 'dark' : 'light'}`}>
+        <div className="navbar-header-container">
       <a id="logo" href="index.html">
-        <img src='/src/img/logo.svg' alt="Silicon logo" />
+        <img src={SiliconIcon} alt="Silicon logo" />
+        <h1>Silicon</h1>
       </a>
+        </div>
 
       <nav id="main-menu" className="navbar-features">
         <a className="nav-link" href="#">Features</a>

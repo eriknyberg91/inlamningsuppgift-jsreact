@@ -27,6 +27,22 @@
     padding-bottom: 1rem;
     padding-inline: 1rem;
   }
+
+  .navbar-header-container a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .navbar-header-container img {
+    margin-right: .8rem;
+  }
+
+  .navbar-header-container h1 {
+    color: black;
+    font-weight: 900;
+  }
   
   .btn-primary {
     background-color: var(--color-primary);
