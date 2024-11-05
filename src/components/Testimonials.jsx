@@ -3,6 +3,7 @@ import './Testimonials.css'
 import Albert from '../img/testimonialalbert.svg'
 import Fannie from '../img/testimonialfannie.svg'
 import { useState, useEffect } from 'react'
+import { useTheme } from '../contexts/ThemeContext'; 
 
 const Testimonials = () => {
 
@@ -20,14 +21,16 @@ const Testimonials = () => {
       });
   }, []);
 
+  const { darkMode } = useTheme()
+
   return (
-    <div class="testimonials-container">
+    <div className={`testimonials-container ${darkMode ? 'dark' : 'light'}`}>
             <div class="testimonials-container-text">
                 <h1>Clients are loving our App</h1>
             </div>
-            <div className="testimonials-clients-container">
+            <div className={`testimonials-clients-container ${darkMode ? 'dark' : 'light'}`}>
                 {testimonials.map(client => (
-                        <div key={client.id} className="testimonial-item">
+                        <div key={client.id} className={`testimonial-item ${darkMode ? 'dark' : 'light'}`}>
                         <div className="testimonial-quote-icon">
                             <i className="fa-solid fa-quote-left"></i>
                         </div>
@@ -47,7 +50,7 @@ const Testimonials = () => {
                                     <img src={client.avatarUrl} alt="" />
                                 </div>
                                 <div className="testimonial-client-text">
-                                    <h2>{client.author}</h2>
+                                    <h2 style={{color: darkMode ? '#FFF' : 'black'}} id='client-author'>{client.author}</h2>
                                     <h3>{client.jobRole}</h3>
                                 </div>
                             </div>
