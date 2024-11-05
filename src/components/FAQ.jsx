@@ -4,10 +4,12 @@ import { useState, useEffect } from 'react';
 import FAQItem from './FAQItem';
 import PhoneLogo from '../img/phonelogo.svg'
 import MessagingLogo from '../img/messaginglogo.svg'
+import { useTheme } from '../contexts/ThemeContext'; 
 
 const FAQ = () => {
 
     const [faqs, setFaqs] = useState([]);
+    const { darkMode } = useTheme()
 
   useEffect(() => {
     fetch('https://win24-assignment.azurewebsites.net/api/faq')
@@ -22,7 +24,7 @@ const FAQ = () => {
   }, []);
 
   return (
-    <div className='faq-container'>
+    <div className={`faq-container ${darkMode ? 'dark' : 'light'}`}>
             <div className="faq-info">
             <h1>Any questions? Check out the FAQs</h1>
             <p>Still have unanswered questions and need to get in touch?</p>

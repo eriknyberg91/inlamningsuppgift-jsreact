@@ -48,6 +48,10 @@
     font-size: 1rem;
 }
 
+.dark {
+    background-color: black;
+}
+
 @media (min-width: 768px) {
     .contact-us-button-container {
         display: none;

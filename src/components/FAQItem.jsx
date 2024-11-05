@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import './FAQItem.css'
+import { useTheme } from '../contexts/ThemeContext'; 
+
 
 const FAQItem = ({question, answer, id}) => {
     const [isVisible, setIsVisible] = useState(false);
+    const {darkMode} = useTheme()
 
     const toggleVisibility = () => {
         setIsVisible(!isVisible);
@@ -14,6 +17,7 @@ const FAQItem = ({question, answer, id}) => {
                 <h3>{question}</h3>
                 <button 
                     className={`arrow-button ${isVisible ? 'active' : ''}`}
+                    style={{backgroundColor: darkMode ? 'darkgray' : ''}}
                 >
                     <i className="fa-solid fa-chevron-down"></i>
                 </button>
