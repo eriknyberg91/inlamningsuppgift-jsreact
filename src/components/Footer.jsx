@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import './Footer.css'
 import Notification from '../img/notification.svg'
+import { useTheme } from '../contexts/ThemeContext'; 
+
 
 const Footer = () => {
   const [email, setEmail] = useState('')
   const [validationMessage, setValidationMessage] = useState('')
   const [isSuccess, setIsSuccess] = useState(false)
+  const {darkMode} = useTheme()
 
   const validateForm = async (e) => {
     e.preventDefault()
@@ -45,7 +48,7 @@ const Footer = () => {
 
   return (
     <form onSubmit={validateForm} noValidate>
-      <div className="footer-container">
+      <div className={`footer-container ${darkMode ? 'dark' : 'light'}`}>
         <div className="footer-info-container">
           <img src={Notification} alt="" />
           <h3>Subscribe to our newsletter to stay informed about latest updates</h3>
@@ -58,6 +61,7 @@ const Footer = () => {
             type="email"
             placeholder="Your Email"
             value={email}
+            style={{backgroundColor: darkMode ? 'black' : '#FFF'}}
           />
           <button className="footer-button">Subscribe</button>
           

@@ -48,6 +48,10 @@
     padding: 1em;
 }
 
+.dark {
+    background-color: black;
+}
+
 @media (min-width: 768px) {
     .footer-container {
         display: flex;
