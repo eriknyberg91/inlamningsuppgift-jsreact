@@ -152,10 +152,14 @@
   @media (min-width: 1400px) {
 
     .navbar-container {
-        max-width: 1320px;
         grid-template-columns: auto 1fr auto auto;
         gap: 2rem;
         margin: auto;
+    }
+
+    .navbar-header-container {
+      max-width: 1320px; 
+      margin: auto;
     }
     #auth-signin {
         display: block;
@@ -168,6 +172,7 @@
         
         .nav-link {
             margin-right: 1rem;
+            color: #FFF;
         }
       }
   } 

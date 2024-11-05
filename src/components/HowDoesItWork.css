@@ -3,12 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
     background-color: #F3F6FF;
 }
 
 .how-does-it-work-container h1 {
     margin-bottom: 1.5rem;
+    margin-top: 3rem;
 }
 
 .how-does-it-work-text-container {

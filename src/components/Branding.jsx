@@ -16,6 +16,7 @@ const Branding = ({brandingList}) => {
           <BrandingItem 
             key={index}
             imageSource={brand.imageSource}
+            type={brand.type}
             className="branding-item" 
           />
         );

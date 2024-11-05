@@ -38,11 +38,11 @@ const ProductInfo = () => {
                 <div class="product-details-container">
                     <div class="product-details">
                         <img src={IconCard} alt="" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, distinctio.</p>
+                        <p style={{color: darkMode ? '#FFF' : 'black'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, distinctio.</p>
                     </div>
                     <div class="product-details">
                         <img src={IconCard} alt="" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, distinctio.</p>
+                        <p style={{color: darkMode ? '#FFF' : 'black'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, distinctio.</p>
                     </div>
                 </div>
                 

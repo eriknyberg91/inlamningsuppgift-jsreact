@@ -63,21 +63,27 @@ const App = () => {
   const brandingImages = [
     {
       imageSource: logoipsum,
+      type: 'tablet-branding'
     },
     {
       imageSource: logoipsum1,
+      type: 'tablet-branding'
     },
     {
       imageSource: logoipsum2,
+      type: 'tablet-branding'
     },
     {
       imageSource: logoipsum3,
+      type: 'tablet-branding'
     },
     {
       imageSource: logoipsum4,
+      type: 'desktop-branding'
     },
     {
       imageSource: logoipsum5,
+      type: 'desktop-branding'
     },
     
   ]

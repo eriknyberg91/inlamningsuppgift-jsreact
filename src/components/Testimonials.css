@@ -1,18 +1,17 @@
-.clients-container {
+.testimonials-container {
     display: none;
 }
 
 
 @media (min-width: 768px) {
-    
 
 }
 @media (min-width: 1400px) {
     .testimonials-container {
+        display: grid;
         padding: 4rem 2rem;
         justify-content: center;
         background-color: var(--color-gray-100);
-        max-width: 1320px;
         margin: auto;
     }
     
