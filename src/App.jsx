@@ -14,7 +14,7 @@ import ProductInfo from './components/ProductInfo'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
-import ThemeProvider from './contexts/ThemeContext'
+import ThemeProvider, { useTheme } from './contexts/ThemeContext'
 import logoipsum from './img/logoipsum.svg'
 import logoipsum1 from './img/logoipsum1.svg'
 import logoipsum2 from './img/logoipsum2.svg'
@@ -23,6 +23,8 @@ import logoipsum4 from './img/logoipsum4.svg'
 import logoipsum5 from './img/logoipsum5.svg'
 
 const App = () => {
+
+  const { darkMode } = useTheme
 
   const features = 
   [

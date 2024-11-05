@@ -6,7 +6,7 @@ import { useTheme } from '../contexts/ThemeContext';
 
 
 const Features = ({featuresList}) => {
-  const { darkMode, toggleTheme } = useTheme();
+  const { darkMode } = useTheme();
 
 
   return (

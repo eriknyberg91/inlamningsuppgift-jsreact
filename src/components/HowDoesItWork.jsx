@@ -3,10 +3,12 @@ import './HowDoesItWork.css'
 import Iphone12Pro1 from '../img/iPhone12Pro1.svg'
 import Iphone12Pro2 from '../img/iPhone12Pro2.svg'
 import Iphone12Pro3 from '../img/iPhone12Pro3.svg'
+import { useTheme } from '../contexts/ThemeContext'; 
 
 const HowDoesItWork = () => {
+  const { darkMode } = useTheme();
   return (
-    <div class="how-does-it-work-container">
+    <div className={`how-does-it-work-container ${darkMode ? 'dark' : 'light'}`}>
             <h1>How does it work?</h1>
             <div class="how-does-it-work-images-container">
                 <img src={Iphone12Pro1} className='howdoesitwork-desktop' alt="Image of phone with budget history"/>
