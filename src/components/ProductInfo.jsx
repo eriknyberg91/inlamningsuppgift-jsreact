@@ -3,10 +3,13 @@ import './ProductInfo.css'
 import ProductInfo1 from '../img/product-info1.svg'
 import ProductInfo2 from '../img/product-info2.svg'
 import IconCard from '../img/iconcard.svg'
+import { useTheme } from '../contexts/ThemeContext'; 
+
 
 const ProductInfo = () => {
+    const { darkMode } = useTheme()
   return (
-    <div className="product-container">
+    <div className={`product-container ${darkMode ? 'dark' : 'light'}`}>
 
         <div class="product-info-container">
             <div class="product-info-text">
