@@ -1,9 +1,5 @@
 .branding-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+    display: none;
 }
 
 .tablet-branding {
@@ -15,6 +11,8 @@
 }
 
 
+
+
 @media (min-width: 768px) {
     .tablet-branding{
         display: block;
@@ -24,5 +22,18 @@
 @media (min-width: 1400px) {
     .desktop-branding {
         display: block;
+    }
+
+    .branding-item {
+        margin-right: 2rem;
+        border: 1px solid gray;
+        padding: .5rem
+    }
+    .branding-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
     }
 }

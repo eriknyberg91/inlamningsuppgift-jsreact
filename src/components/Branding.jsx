@@ -1,22 +1,26 @@
 import React from 'react'
 import './Branding.css'
-import brandlogo1 from '../img/brandlogo1.svg'
-import brandlogo2 from '../img/brandlogo2.svg'
-import brandlogo3 from '../img/brandlogo3.svg'
-import brandlogo4 from '../img/brandlogo4.svg'
-import brandlogo5 from '../img/brandlogo5.svg'
-import brandlogo6 from '../img/brandlogo6.svg'
+import BrandingItem from './BrandingItem'
+import { useTheme } from '../contexts/ThemeContext'; 
 
-const Branding = () => {
+
+const Branding = ({brandingList}) => {
+  const { darkMode, toggleTheme } = useTheme();
+
+  console.log("Inside Branding:", brandingList);
   return (
-    <div className="branding-container">
-            <img className="tablet-branding" src={brandlogo1} alt="Logo of corporation using the app"/>
-            <img className="tablet-branding" src={brandlogo2} alt="Logo of corporation using the app"/>
-            <img className="tablet-branding" src={brandlogo3} alt="Logo of corporation using the app"/>
-            <img className="tablet-branding" src={brandlogo4} alt="Logo of corporation using the app"/>
-            <img className="desktop-branding" src={brandlogo5} alt="Logo of corporation using the app"/>
-            <img className="desktop-branding" src={brandlogo6} alt="Logo of corporation using the app"/>
-        </div>
+    <div className={`branding-container ${darkMode ? 'dark' : 'light'}`}>
+      {brandingList.map((brand, index) => {
+        console.log("Mapping brand:", brand);
+        return (
+          <BrandingItem 
+            key={index}
+            imageSource={brand.imageSource}
+            className="branding-item" 
+          />
+        );
+      })}
+    </div>
   )
 }
 

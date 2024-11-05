@@ -89,6 +89,21 @@
     display: none;
 }
 
+.dark {
+    background-color: black;
+}
+
+.dark .discover-more-button {
+    background-color: black;
+    color: #FFF
+}
+
+.dark h1,p {
+    color: #FFF
+}
+
+
+
 
 @media (min-width: 768px) {
     .showcase-content-container {

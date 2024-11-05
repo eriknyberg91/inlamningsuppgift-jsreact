@@ -15,6 +15,12 @@ import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 import ThemeProvider from './contexts/ThemeContext'
+import logoipsum from './img/logoipsum.svg'
+import logoipsum1 from './img/logoipsum1.svg'
+import logoipsum2 from './img/logoipsum2.svg'
+import logoipsum3 from './img/logoipsum3.svg'
+import logoipsum4 from './img/logoipsum4.svg'
+import logoipsum5 from './img/logoipsum5.svg'
 
 const App = () => {
 
@@ -51,12 +57,36 @@ const App = () => {
       info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, necessitatibus.'
     },
   ]
+
+  const brandingImages = [
+    {
+      imageSource: logoipsum,
+    },
+    {
+      imageSource: logoipsum1,
+    },
+    {
+      imageSource: logoipsum2,
+    },
+    {
+      imageSource: logoipsum3,
+    },
+    {
+      imageSource: logoipsum4,
+    },
+    {
+      imageSource: logoipsum5,
+    },
+    
+  ]
+
+  console.log("App.js brandingImages:", brandingImages);
   return (
     <div>
       <ThemeProvider>
             <Navbar />
             <Showcase />
-            <Branding />
+            <Branding brandingList={brandingImages} />
             <Features featuresList={features} />
             <HowDoesItWork />
             <ProductInfo />

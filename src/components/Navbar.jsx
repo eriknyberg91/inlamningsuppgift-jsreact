@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '../contexts/ThemeContext';  // Make sure this path is correct!
+import { useTheme } from '../contexts/ThemeContext'; 
 import './Navbar.css'
 import SiliconIcon from '../img/silicon-icon.svg'
 
