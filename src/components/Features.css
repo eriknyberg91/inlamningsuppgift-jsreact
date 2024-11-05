@@ -19,6 +19,14 @@
     display: none;
 }
 
+.dark {
+    background-color: black;
+}
+
+.dark p {
+    color: #FFF
+}
+
 
 
 @media (min-width: 768px) {

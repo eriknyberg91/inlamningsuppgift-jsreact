@@ -9,7 +9,7 @@ const FeaturesItem = ({imageSource, header, info}) => {
         </div>
         <div className="text-container">
           <h2>{header}</h2>
-          <p>{info}</p>
+          <p className='text-info'>{info}</p>
         </div>
     </div>
   )

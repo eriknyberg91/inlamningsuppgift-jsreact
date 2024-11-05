@@ -1,11 +1,16 @@
 import React from 'react'
 import FeaturesItem from './FeaturesItem'
 import './Features.css'
+import { useTheme } from '../contexts/ThemeContext'; 
+
 
 
 const Features = ({featuresList}) => {
+  const { darkMode, toggleTheme } = useTheme();
+
+
   return (
-    <div className='features-container'>
+    <div className={`features-container ${darkMode ? 'dark' : 'light'}`}>
       <div className="features-image-container">
         <img src="\src\img\appfeaturesphoneimage.svg" alt="" />
       </div>

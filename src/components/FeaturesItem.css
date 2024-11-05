@@ -7,6 +7,10 @@ h2 {
     margin-bottom: .4em;
 }
 
+.text-info {
+    color: black;
+}
+
 @media (min-width: 768px) {
     
 }
