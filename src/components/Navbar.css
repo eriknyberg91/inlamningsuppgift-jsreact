@@ -67,6 +67,7 @@
     background-color: transparent;
     border: none;
     font-size: 2rem;
+    cursor: pointer;
   }
   
   .btn-toggle-switch {
@@ -90,6 +91,13 @@
     color: #FFF
   }
 
+  #main-menu .nav-link {
+    color: black;
+  }
+
+  
+
+  
   
   /* START - Använde ChatGPT för att skapa en switch och anpassade sedan utseendet efter Figma-fil */
   .switch {
