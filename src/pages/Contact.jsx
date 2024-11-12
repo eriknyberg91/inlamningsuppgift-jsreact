@@ -131,7 +131,7 @@ const ContactPage = () => {
 
       <div className="bottom-section">
         <div className="map-container">
-          <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
+          <LoadScript googleMapsApiKey={import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY}>
             <GoogleMap
               mapContainerStyle={mapStyles}
               zoom={15}
