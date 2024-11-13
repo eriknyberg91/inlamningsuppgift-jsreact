@@ -17,7 +17,7 @@ const Navbar = () => {
           </a>
         </div>
 
-      <nav id="main-menu" className="navbar-features">
+      <nav id="main-menu" className={`navbar-features ${darkMode ? 'dark' : 'light'}`}>
         <a className="nav-link" href="#">Features</a>
         <a className="nav-link" href="/contact">Contact</a>
       </nav>

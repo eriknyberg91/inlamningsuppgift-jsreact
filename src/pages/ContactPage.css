@@ -203,6 +203,100 @@
   flex-shrink: 0;
 }
 
+/* Used Claude.AI for styling different containers, made slight adjustments to colors of text */
+
+.contact-wrapper.dark {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+
+.contact-left.dark {
+  background-color: #2d2d2d;
+}
+
+.contact-left.dark h1 {
+  color: #ffffff;
+}
+
+.contact-section.dark {
+  background-color: #2d2d2d;
+}
+
+.contact-section.dark .contact-content h3 {
+  color: #ffffff;
+}
+
+.contact-section.dark .contact-content p {
+  color: #b3b3b3;
+}
+
+.contact-section.dark .contact-link {
+  color: #818cf8;
+}
+
+.contact-section.dark .icon-button {
+  background-color: #ffffff;
+}
+
+.contact-section.dark .icon-button i {
+  color: #818cf8;
+}
+
+.dark .form-container {
+  background-color: #2d2d2d;
+}
+
+.dark .form-container h2 {
+  color: #ffffff;
+}
+
+.dark .form-group input,
+.dark .form-group select {
+  background-color: #1a1a1a;
+  border-color: #404040;
+  color: #e5e5e5;
+}
+
+.dark .form-group input::placeholder {
+  color: #8c8c8c;
+}
+
+.dark .submit-btn {
+  background-color: #818cf8;
+}
+
+.dark .submit-btn:hover {
+  background-color: #6366f1;
+}
+
+.dark .center h3 {
+  color: #ffffff;
+}
+
+.dark .center-text p {
+  color: #b3b3b3;
+}
+
+.dark .center-text i {
+  color: #818cf8;
+}
+
+.dark .center .phone {
+  color: #818cf8;
+}
+
+.dark .social-links .social-icon {
+  color: #b3b3b3;
+}
+
+.dark .social-links .social-icon:hover {
+  color: #818cf8;
+}
+
+.dark .map-container {
+  filter: brightness(0.8);
+}
+
 
 @media (max-width: 1024px) {
   .contact-right {

@@ -5,7 +5,7 @@ import ThemeProvider, { useTheme } from '../contexts/ThemeContext'
 
 const ContactPage = () => {
 
-  //TODO: Implement darkmode
+  const { darkMode } = useTheme();
   
   const [isMapLoaded, setIsMapLoaded] = React.useState(false);
   const [formData, setFormData] = React.useState({
@@ -55,11 +55,13 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="contact-wrapper">
-      <div className="contact-left">
+    <div className={`page-container ${darkMode ? 'dark' : ''}`}>
+
+    <div className={`contact-wrapper ${darkMode ? 'dark' : 'light'}`}>
+      <div className={`contact-left ${darkMode ? 'dark' : 'light'}`}>
         <h1>Contact Us</h1>
         
-        <div className="contact-section">
+        <div className={`contact-section ${darkMode ? 'dark' : 'light'}`}>
           <div className="contact-item">
           <button className="icon-button">
              <i className="fa-regular fa-envelope"></i>
@@ -196,6 +198,7 @@ const ContactPage = () => {
         <a href="#" className="social-icon"><i className="fab fa-linkedin"></i></a>
         <a href="#" className="social-icon"><i className="fab fa-instagram"></i></a>
       </div>
+    </div>
     </div>
   );
 };

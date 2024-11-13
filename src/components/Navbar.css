@@ -91,9 +91,10 @@
     color: #FFF
   }
 
-  #main-menu .nav-link {
+  .navbar-features.light a {
     color: black;
   }
+
 
   
 
